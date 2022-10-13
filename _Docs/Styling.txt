@@ -1,0 +1,9 @@
+Links 
+  -To have the links working, 'Links' from 'remix' should be added in header in root.tsx
+
+Styling:
+  - Add styles through link tag (page/route specific) 
+    - all the links should be created with the name 'links' and should be exported (named export) from the file.
+  - All links added in parent will be inherited to child.
+  
+

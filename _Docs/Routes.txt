@@ -1,0 +1,20 @@
+Outlet: 
+  Used to render the children file in the parent
+
+Routes:
+  - root.tsx is the parent and inorder to render the routes it should be a child of root.tsx. 
+  This can be acheived by Outlet from 'remix'
+
+
+Routes/
+  index.tsx => default child of root.tsx
+  jokes.tsx => '/jokes' child of root.tsx 
+  
+  jokes/ 
+    index.tsx => default child of jokes.tsx
+    new.tsx => '/new' child of jokes.tsx
+    parameterised routes
+      $jokesId.tsx => '/<anything>' child of jokes.tsx (matches any values other than the existing ones)
+
+  jokes.funny.tsx => not a child of jokes.tsx but has the endpoint '/jokes/funny'
+
