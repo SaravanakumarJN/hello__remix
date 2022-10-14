@@ -1,0 +1,12 @@
+Loader Data: 
+  - Used to make onload api request (component/route specific)
+
+  - All the onload call should be made within the function named 'loader' and the function should be exported (named export) as well
+  - `useLoaderData` is used to get the resolved data inside the component
+
+  Parameterised on load
+    - 'loader' function get the page context object as a argument from which we could get the params and other required data to make parameterised calls
+
+  Abort on load:
+    - Incase if the onload api call is taking more time we could abort the call and resolve it using the setTimeout 
+
